@@ -7,7 +7,8 @@ const {
     acceptAssignment,
     rejectAssignment
 } = require('../controllers/adminController');
-const { authAdmin } = require('../middleware/authMiddleware'); // Add admin authentication middleware
+const { authAdmin } = require('../middleware/authMiddleware'); 
+// Add admin authentication middleware
 const router = express.Router();
 
 router.post('/register', registerAdmin);
